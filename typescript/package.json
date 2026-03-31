@@ -1,0 +1,59 @@
+{
+  "name": "@mainlayer/testing",
+  "version": "0.1.0",
+  "description": "Mock server and test helpers for Mainlayer payment infrastructure integrations",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./interceptors": {
+      "import": "./dist/interceptors.js",
+      "types": "./dist/interceptors.d.ts"
+    },
+    "./fixtures": {
+      "import": "./dist/fixtures.js",
+      "types": "./dist/fixtures.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src tests --ext .ts",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mainlayer",
+    "testing",
+    "mock",
+    "payments",
+    "ai-agents"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "msw": ">=2.0.0"
+  },
+  "peerDependenciesMeta": {
+    "msw": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.12.0",
+    "msw": "^2.3.0",
+    "typescript": "^5.4.5",
+    "vitest": "^1.5.0"
+  }
+}
