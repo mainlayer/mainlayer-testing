@@ -1,8 +1,8 @@
 # mainlayer-testing
 
-Mock server and test helpers for [Mainlayer](https://mainlayer.xyz) integrations — available as both a **TypeScript/Node.js** package and a **Python** package.
+Mock server and test helpers for [Mainlayer](https://mainlayer.fr) integrations — available as both a **TypeScript/Node.js** package and a **Python** package.
 
-Mainlayer is payment infrastructure for AI agents. This package lets you write fast, deterministic integration tests against a local mock that mirrors the Mainlayer API (`https://api.mainlayer.xyz`) without making real network calls or incurring charges.
+Mainlayer is payment infrastructure for AI agents. This package lets you write fast, deterministic integration tests against a local mock that mirrors the Mainlayer API (`https://api.mainlayer.fr`) without making real network calls or incurring charges.
 
 ---
 
@@ -125,7 +125,7 @@ store.resources.set('res_test_000001', {
 Custom base URL (e.g. staging):
 
 ```typescript
-createHandlers({ baseUrl: 'https://api.mainlayer.xyz' })
+createHandlers({ baseUrl: 'https://api.mainlayer.fr' })
 ```
 
 ---

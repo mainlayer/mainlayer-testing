@@ -1,7 +1,7 @@
 """
 mainlayer-testing — Mock server and test helpers for Mainlayer integrations.
 
-https://api.mainlayer.xyz
+https://api.mainlayer.fr
 """
 
 from .mock_server import MainlayerMockServer

@@ -57,7 +57,7 @@ function entitlementKey(resourceId: string, payerWallet: string): string {
 // ---------------------------------------------------------------------------
 
 export interface CreateHandlersOptions {
-  /** Mainlayer base URL to intercept. Defaults to https://api.mainlayer.xyz */
+  /** Mainlayer base URL to intercept. Defaults to https://api.mainlayer.fr */
   baseUrl?: string;
   /** Provide a store to pre-seed or inspect intercepted state. */
   store?: InterceptorStore;
@@ -70,7 +70,7 @@ export interface CreateHandlersOptions {
  * @returns An array of MSW request handlers ready to pass to `setupServer` or `setupWorker`.
  */
 export function createHandlers(options: CreateHandlersOptions = {}): HttpHandler[] {
-  const base = (options.baseUrl ?? 'https://api.mainlayer.xyz').replace(/\/$/, '');
+  const base = (options.baseUrl ?? 'https://api.mainlayer.fr').replace(/\/$/, '');
   const store = options.store ?? createStore();
 
   return [

@@ -1,6 +1,6 @@
 /**
  * Core types for the Mainlayer mock server and test helpers.
- * https://api.mainlayer.xyz
+ * https://api.mainlayer.fr
  */
 
 export interface Resource {

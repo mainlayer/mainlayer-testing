@@ -1,5 +1,5 @@
 """
-Flask-based mock server that mimics the Mainlayer API (https://api.mainlayer.xyz).
+Flask-based mock server that mimics the Mainlayer API (https://api.mainlayer.fr).
 
 Designed to start on a random available port and run in a background thread so
 tests can interact with it via real HTTP requests. Supports both direct use and

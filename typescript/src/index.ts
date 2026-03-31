@@ -2,7 +2,7 @@
  * @mainlayer/testing — TypeScript entry point
  *
  * Mock server and test helpers for Mainlayer payment infrastructure.
- * https://api.mainlayer.xyz
+ * https://api.mainlayer.fr
  */
 
 export { MainlayerMockServer } from './mock-server.js';

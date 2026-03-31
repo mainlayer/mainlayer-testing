@@ -1,5 +1,5 @@
 /**
- * Express-based mock server that mimics the Mainlayer API (https://api.mainlayer.xyz).
+ * Express-based mock server that mimics the Mainlayer API (https://api.mainlayer.fr).
  *
  * Designed to be started in tests before each test suite and stopped after.
  * Maintains in-memory state that can be seeded and inspected per-test.
